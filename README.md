@@ -7,7 +7,8 @@ imgtotxtlabel.py:按照目录下的图片文件写对应的图片名称的txt，
 
 pandasmergecsv.py:将识别的不同字段的csv按照imagename拼接起来
 
-char_process.py:label_to_char,直接根据已有的label的csv文件生成char.csv，(并根据freechars.csv进行更新),完整版
+char_process.py:label_to_char,直接根据已有的label的csv文件生成char.csv，(并根据freechars.csv进行更新),完整版，
+执行方式：python char_process.py test
 
 label_to_char.py: 直接根据已有的label_freechars.csv去生成freechars_update.csv
 
