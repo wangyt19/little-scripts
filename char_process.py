@@ -35,11 +35,7 @@ def chars_update(label_file):
     char_path = os.path.join(parent_dir , 'chars_freechars.csv')
     dic2 = {}
     for line in open(char_path).readlines()[1:]:
-        for char in line.split(',')[1].strip():
-            if char not in dic2.keys():
-                dic2[char] = 1
-            else:
-                dic2[char] += 1
+        dic2[line.split(',')[0].strip()]=line.split(',')[1].strip()
 
     dic2.update(dic1)
     with open(os.path.join(parent_dir, 'chars_update.csv'), 'w') as f:
