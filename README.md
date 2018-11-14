@@ -11,6 +11,6 @@ label_to_char.py: 直接根据已有的label_freechars.csv去生成freechars_upd
 
 txt_drop.py：txt文件去重
 
-img_cut.py:批量cut image
+cut_image.py:批量cut image
 
 
