@@ -39,6 +39,8 @@ def chars_update(label_file):
 
     dic2.update(dic1)
     with open(os.path.join(parent_dir, 'chars_update.csv'), 'w') as f:
+        writer = csv.writer(f)
+        writer.writerow(['char', 'freq'])
         for key, value in dic2.items():
             f.write(key + ',' + str(value) + '\n')
 
