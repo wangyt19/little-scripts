@@ -1,6 +1,13 @@
 #label_to_char,直接根据已有的label.csv文件生成chars_update.csv，(并根据chars_freechars.csv进行更新),完整版
 #执行方式：python char_process.py label
 
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Nov 14 16:11:13 2018
+
+@author: wyt
+"""
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
