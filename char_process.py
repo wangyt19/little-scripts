@@ -78,7 +78,7 @@ def chars_update(label_file):
         writer.writerow(['char', 'freq'])
  #       f.write('char' + ',' + 'freq' + '\n')#以这种方式写入的时候会有问题，读的时候要加df=pd.read_csv('path',quoting=csv.QUOTE_NONE,delimiter="\n")
         for key, value in dic2.items():
-        #    f.write(key + ',' + str(value) + '\n')
+        #    f.write(key + ',' + str(value) + '\n')#这两种方式要分别配套使用，不可混用
              writer.writerow([key,str(value)])
 
 
